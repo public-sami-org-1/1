@@ -8,6 +8,15 @@ jobs:
   aqua:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Get commit hash
+        run: |
+          COMMIT_HASH=$(git rev-parse HEAD)
+          echo "Current commit hash: $COMMIT_HASH"
+          echo "COMMIT_HASH=$COMMIT_HASH" >> $GITHUB_ENV
+          
       - name: Manifest Generation
         run: |
           export BILLY_SERVER=https://billy.dev-aqua.codesec.aquasec.com
