@@ -25,7 +25,7 @@ jobs:
             --aqua-secret "${{ secrets.AQUA_SECRET }}" \
             --cspm-url https://stage.api.cloudsploit.com \
             --artifact-path "." \
-            --debug
+            --debug true
 
             # The docker image name:tag of the newly built image
             # --artifact-path "my-image-name:${{ env.tag-version }}" 
