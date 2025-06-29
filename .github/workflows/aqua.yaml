@@ -17,7 +17,7 @@ jobs:
           echo "install.sh checksum failed"
           exit 1
           fi
-          BINDIR="." sh install.sh
+          BINDIR="." DEBUG="true" sh install.sh
           rm install.sh install.sh.checksum
           ./billy generate \
             --access-token "${{ secrets.GITHUB_TOKEN }}" \
