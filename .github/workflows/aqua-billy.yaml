@@ -8,8 +8,5 @@ on:
 
 jobs:
   aqua:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Build and push
-        uses: public-sami-org-1/shared-workflows/billy@main
+    name: Build and push
+    uses: public-sami-org-1/shared-workflows/billy@main
