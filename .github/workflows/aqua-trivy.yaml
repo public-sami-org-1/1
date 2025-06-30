@@ -1,4 +1,4 @@
-name: Aqua
+name: Aqua Trivy
 
 on:
   pull_request:
