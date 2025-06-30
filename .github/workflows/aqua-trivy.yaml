@@ -9,5 +9,5 @@ jobs:
 
     steps:
       - name: Aqua scanner
-        uses: tamirsinai/shared-workflows/.github/workflows/aqua.yml@main
+        uses: public-sami-org-1/shared-workflows/.github/workflows/aqua.yml@main
         secrets: inherit

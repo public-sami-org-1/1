@@ -12,4 +12,4 @@ jobs:
 
     steps:
       - name: Build and push
-        uses: tamirsinai/shared-workflows/billy@main
+        uses: public-sami-org-1/shared-workflows/billy@main
