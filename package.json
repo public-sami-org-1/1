@@ -3,14 +3,14 @@
   "version": "17.0.0-SNAPSHOT",
   "private": true,
   "description": "Probably the most modern and sophisticated insecure web application",
-  "keywords": [
+  "keywords": [ 
     "web security",
     "web application security",
     "webappsec",
     "owasp",
     "pentest",
     "pentesting",
-    "security",
+    "security", 
     "vulnerable",
     "vulnerability",
     "broken",
