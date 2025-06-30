@@ -5,8 +5,6 @@ on:
 
 jobs:
   aqua:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Aqua scanner
-        uses: public-sami-org-1/shared-workflows/.github/workflows/aqua.yml@main
+    name: Aqua scanner
+    uses: public-sami-org-1/shared-workflows/.github/workflows/aqua.yml@main
+    secrets: inherit
