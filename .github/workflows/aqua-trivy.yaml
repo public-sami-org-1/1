@@ -1,0 +1,13 @@
+name: Aqua
+
+on:
+  pull_request:
+
+jobs:
+  aqua:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Aqua scanner
+        uses: tamirsinai/shared-workflows/.github/workflows/aqua.yml@main
+        secrets: inherit

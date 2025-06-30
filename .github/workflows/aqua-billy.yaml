@@ -1,0 +1,16 @@
+
+name: Continuous Integration
+run-name: Continuous Integration (${{ github.event.pull_request.title || github.event.commits[0].message }})
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  aqua:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build and push
+        uses: tamirsinai/shared-workflows/billy@main
